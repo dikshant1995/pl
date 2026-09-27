@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Cpu, Lock } from 'lucide-react';
+import laxmiLogo from '../assets/laxmi-logo.png';
 import './Navbar.css';
 
 const Navbar = ({ onAdminClick }) => {
@@ -8,7 +9,7 @@ const Navbar = ({ onAdminClick }) => {
         <nav className="main-navbar">
             <div className="nav-container">
                 <div className="nav-left">
-                    <Link to="/" className="nav-brand" style={{ textDecoration: 'none' }}>
+                    <Link to="/" className="nav-brand" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
                         <span 
                             style={{ 
                                 fontSize: '1.8rem', 
@@ -25,12 +26,6 @@ const Navbar = ({ onAdminClick }) => {
                             Laxmi credit
                         </span>
                     </Link>
-                </div>
-                <div className="nav-right">
-                    <button className="nav-admin-btn" onClick={onAdminClick}>
-                        <Lock size={14} />
-                        <span>ADMIN</span>
-                    </button>
                 </div>
             </div>
         </nav>

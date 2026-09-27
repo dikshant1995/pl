@@ -4,6 +4,7 @@ import { Sparkles, ArrowRight, ArrowLeft, ShieldCheck, Zap, Globe, Lock, Instagr
 import './FuturisticLanding.css';
 import eligibilityDocIcon from '../assets/eligibility-doc-icon.png';
 import documentsFolderIcon from '../assets/documents-folder-icon.png';
+import laxmiLogo from '../assets/laxmi-logo.png';
 import PersonalLoanEmiCalculator from './PersonalLoanEmiCalculator';
 import CustomerSuccessStories from './CustomerSuccessStories';
 import PortalFaqSection from './PortalFaqSection';
@@ -139,8 +140,8 @@ const FuturisticLanding = ({ onGetStarted, onAdminClick, onBlogClick }) => {
       {/* ===== INCRED STYLE HEADER ===== */}
       <header className="holo-header">
         <div className="header-inner-nav">
-          <div className="nav-left" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <div className="neural-logo-small" style={{ cursor: 'pointer' }} onClick={() => window.location.href = '/'}>
+          <div className="nav-left" style={{ display: 'flex', alignItems: 'center' }}>
+            <div className="neural-logo-small" style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} onClick={() => window.location.href = '/'}>
               <span 
                 style={{ 
                   fontSize: '1.9rem', 
